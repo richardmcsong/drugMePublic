@@ -1,0 +1,39 @@
+.patientlisting{
+    display: block;
+    width: 100%;
+    @media(min-width: 800px){
+        width: calc(50% - 10px);
+        display: inline-block;
+        &:nth-child(even){
+            margin-left: 20px;
+        }
+    }
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    box-sizing: border-box;
+    padding: 20px;
+    cursor: pointer;
+    color: hsl(170, 50%, 50%);
+    transition: 0.2s;
+    margin-bottom: 20px;
+    &:hover{
+        box-shadow: 0 0 7px rgba(0,0,0,0.5);
+        transform: scale(1.01);
+    }
+    .block70, .block30{
+        display: inline-block;
+        vertical-align: top;
+        overflow: hidden;
+        padding: 10px;
+        box-sizing: border-box;
+        h1{ margin: 0 }
+    }
+    .block70{
+        width: 70%;
+        h3{
+            font-size: 20px;
+        }
+    }
+    .block30{
+        width: 30%
+    }
+}

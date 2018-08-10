@@ -1,0 +1,14 @@
+.navbar{
+    width: 100%;
+    display: block;
+    height: 100px;
+    background-color: hsl(192, 60%, 20%);
+    box-shadow: 0 0 6px rgba(0,0,0,0.6);
+    margin: 20px 0;
+    h1{
+        padding: 10px;
+        display: inline-block;
+        color: white;
+        margin: 0;
+    }
+}
